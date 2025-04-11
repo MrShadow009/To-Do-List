@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A professional and user-friendly to-do list application to manage your tasks efficiently.">
+  <title>Professional To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/3paNdF+qe1piw4j8WRp1T3o5jWj5g" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h2>My To-Do List</h2>
+    <div class="todo-input">
+      <input type="text" id="taskInput" placeholder="Add a new task..." aria-label="Task input">
+      <input type="time" id="taskTime" aria-label="Task time">
+      <button id="addTaskButton" aria-label="Add task">Add</button>
+    </div>
+    <ul id="taskList" aria-live="polite"></ul>
+    <button id="clearAllButton" aria-label="Clear all tasks">Clear All Tasks</button>
+    <select id="filterTasks" aria-label="Filter tasks">
+      <option value="all">All</option>
+      <option value="completed">Completed</option>
+      <option value="pending">Pending</option>
+    </select>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
